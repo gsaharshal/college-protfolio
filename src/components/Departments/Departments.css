@@ -1,0 +1,155 @@
+.departments{
+
+    background:#f7f9fc;
+
+}
+
+.department-grid{
+
+    margin-top:60px;
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:30px;
+
+}
+
+.department-card{
+
+    position:relative;
+
+    overflow:hidden;
+
+    border-radius:25px;
+
+    height:420px;
+
+    cursor:pointer;
+
+    box-shadow:0 20px 40px rgba(0,0,0,.12);
+
+}
+
+.department-card img{
+
+    width:100%;
+
+    height:100%;
+
+    object-fit:cover;
+
+    transition:.5s;
+
+}
+
+.department-card:hover img{
+
+    transform:scale(1.12);
+
+}
+
+.department-overlay{
+
+    position:absolute;
+
+    inset:0;
+
+    background:linear-gradient(
+    rgba(0,0,0,.15),
+    rgba(7,23,57,.95));
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:flex-end;
+
+    padding:35px;
+
+}
+
+.department-overlay h3{
+
+    color:white;
+
+    font-size:24px;
+
+    margin-bottom:15px;
+
+}
+
+.department-overlay p{
+
+    color:#ddd;
+
+    line-height:1.7;
+
+    margin-bottom:25px;
+
+}
+
+.department-overlay button{
+
+    width:170px;
+
+    padding:14px;
+
+    border:none;
+
+    border-radius:50px;
+
+    background:#00C2FF;
+
+    color:white;
+
+    font-weight:600;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    gap:10px;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.department-overlay button:hover{
+
+    background:white;
+
+    color:#071739;
+
+}
+
+@media(max-width:992px){
+
+.department-grid{
+
+grid-template-columns:repeat(2,1fr);
+
+}
+
+}
+
+@media(max-width:600px){
+
+.department-grid{
+
+grid-template-columns:1fr;
+
+}
+
+.department-card{
+
+height:350px;
+
+}
+
+}

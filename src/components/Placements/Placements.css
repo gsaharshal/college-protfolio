@@ -1,0 +1,215 @@
+.placements{
+
+    background:#f7f9fc;
+
+}
+
+.placement-wrapper{
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    gap:60px;
+
+    align-items:center;
+
+    margin-top:60px;
+
+}
+
+.placement-left h3{
+
+    font-size:38px;
+
+    color:#071739;
+
+    margin-bottom:25px;
+
+}
+
+.placement-left p{
+
+    color:#666;
+
+    line-height:1.8;
+
+    margin-bottom:35px;
+
+}
+
+.placement-points{
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    gap:18px;
+
+}
+
+.placement-points div{
+
+    background:white;
+
+    padding:18px;
+
+    border-radius:12px;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+
+    font-weight:500;
+
+}
+
+.placement-right{
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:25px;
+
+}
+
+.placement-card{
+
+    background:white;
+
+    padding:40px;
+
+    border-radius:20px;
+
+    text-align:center;
+
+    box-shadow:0 20px 40px rgba(0,0,0,.08);
+
+    transition:.4s;
+
+}
+
+.placement-card:hover{
+
+    transform:translateY(-10px);
+
+    background:#071739;
+
+    color:white;
+
+}
+
+.placement-card svg{
+
+    font-size:45px;
+
+    color:#00C2FF;
+
+    margin-bottom:20px;
+
+}
+
+.placement-card h2{
+
+    font-size:36px;
+
+    margin-bottom:10px;
+
+}
+
+.company-section{
+
+    margin-top:90px;
+
+}
+
+.company-section h3{
+
+    text-align:center;
+
+    margin-bottom:40px;
+
+    color:#071739;
+
+    font-size:34px;
+
+}
+
+.company-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:25px;
+
+}
+
+.company-grid div{
+
+    background:white;
+
+    padding:30px;
+
+    text-align:center;
+
+    border-radius:18px;
+
+    font-size:22px;
+
+    font-weight:600;
+
+    color:#071739;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+
+    transition:.4s;
+
+}
+
+.company-grid div:hover{
+
+    background:#00C2FF;
+
+    color:white;
+
+    transform:translateY(-8px);
+
+}
+
+@media(max-width:992px){
+
+.placement-wrapper{
+
+grid-template-columns:1fr;
+
+}
+
+.company-grid{
+
+grid-template-columns:repeat(2,1fr);
+
+}
+
+}
+
+@media(max-width:600px){
+
+.placement-right{
+
+grid-template-columns:1fr;
+
+}
+
+.company-grid{
+
+grid-template-columns:1fr;
+
+}
+
+.placement-points{
+
+grid-template-columns:1fr;
+
+}
+
+}

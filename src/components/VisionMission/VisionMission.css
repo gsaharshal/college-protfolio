@@ -1,0 +1,61 @@
+.vision-row,
+.mission-row{
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    gap:40px;
+
+    align-items:center;
+
+    margin-bottom:60px;
+
+}
+
+.vision-image{
+
+    width:100%;
+
+}
+
+.vision-image img{
+
+    width:100%;
+
+    height:450px;
+
+    object-fit:cover;
+
+    border-radius:25px;
+
+    box-shadow:0 20px 40px rgba(0,0,0,.2);
+
+    transition:.4s;
+
+}
+
+.vision-image img:hover{
+
+    transform:scale(1.03);
+
+}
+
+@media(max-width:992px){
+
+.vision-row,
+.mission-row{
+
+grid-template-columns:1fr;
+
+}
+
+.mission-row{
+
+display:flex;
+
+flex-direction:column-reverse;
+
+}
+
+}
