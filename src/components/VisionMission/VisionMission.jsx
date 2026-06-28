@@ -20,7 +20,7 @@ function VisionMission() {
         <div className="vision-row">
 
           <div className="vision-image">
-            <img src="/college/college1.jpg" alt="Vision" />
+            <img src="/college/college.jpg" alt="Vision" />
           </div>
 
           <div className="vision-card">
